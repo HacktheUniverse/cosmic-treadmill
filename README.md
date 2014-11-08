@@ -6,7 +6,11 @@ URL: http://stevebull.org/cosmictreadmill/index.html
 
 (Planet Walkers declines to present this work in progress at AMNH #hacktheuniverse on November 8, 2014)
 
-Team Members: Steve Bull <steve.bull@gmail.com> @steve_bull, Jerlyn Thomas <jerlynthomas@gmail.com> @jerlyn
+Team Members: 
+
+Steve Bull <steve.bull@gmail.com> @steve_bull http://stevebull.org
+
+Jerlyn Thomas <jerlynthomas@gmail.com> @jerlyn http://www.jerlynthomas.com 
 
 Acknowledgements: http://sebastien.drouyer.com/jquery.earth-3d/ for the code sources that started us
 
