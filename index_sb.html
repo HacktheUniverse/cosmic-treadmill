@@ -1,0 +1,62 @@
+<html itemscope itemtype="http://schema.org/Product">
+  <head>
+    <title>jquery.earth-3d.js plugin - draw a 3d spinning earth on canvas with javascript</title>
+     <meta charset="UTF-8"> 
+     <meta itemprop="name" content="jquery.earth-3d.js">
+    <meta itemprop="description" content="Based on the amazing sphere.js plugin of Sam Hasler, jquery.earth3d.js is an open source jquery plugin which will allow you to emulate a 3d earth (or any planet actually) on canvas.">
+    <meta itemprop="image" content="images/preview.png">
+    <meta name="viewport" content="width=600, initial-scale=1">
+    <link rel="stylesheet" href="css/demo-mobile.css">
+    <script type="text/javascript" src="plugins/sphere/requestanimationframe.polyfill.js"></script>
+    <script type="text/javascript" src="plugins/jquery/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="plugins/jquery/jquery.mobile-1.3.0.min.js"></script>
+
+    <script type="text/javascript" src="sphere-hacked.js"></script>
+    <script type="text/javascript" src="jquery.earth-3d.js"></script>
+    <script type="text/javascript" src="demo-mobile.js"></script>
+ <script>
+
+ </script>
+  </head>
+  
+  <body>
+    <h1>Cosmic Treadmill</h1>
+      <div id="showoff">
+        <div id="container">
+          <canvas id="sphere" width="600" height="600">
+          </canvas>
+          <!-- glow-shadows id went here -->
+          <div id="glow-shadows" class="earth">
+          
+			<div id="Runner"><img src="images/RunnerStop.png" width="51" height="144" alt="" id="pic" /></div>
+			
+			<!-- works in GOOGLE source window.document.pic.src='images/LeftFoot.png' but not as onclick="window.document.pic.src='images/LeftFoot.png';"-->  
+          
+          	<div id="Legs">
+              <div id="LeftLeg"><img src="images/LeftFoot.png" id="LF" alt="" /></div>
+              <div id="RightLeg"><img src="images/RightFoot.png" id="RF" alt="" onclick="document.getElementById('RF').addEventListener('click', loadEarth(20));" /></div>
+          	</div>
+
+            
+		  </div>
+          <canvas id="flights" width="600" height="600">
+          	</canvas>
+          <div id="locations"> 
+          
+          </div>
+           <div id="sun"><img src="images/SunRays.png" width="777" height="544" alt="" onclick="document.getElementById('pic').src='images/LeftFoot.png'" /></div>
+        </div>
+         <p id="demo">Speed</p>
+      </div>
+      <div>
+        <!-- button onclick="window.document.pic.src='images/RunnerRight.png';getElementById('demo').innerHTML='Speed: 1,000 miles/hour';">Runner Right</button -->
+        <button onclick="document.getElementById('pic').src='images/RunnerRight.png';getElementById('demo').innerHTML='Speed: 1,000 miles/hour';">Runner Right</button>
+        <button onclick="document.getElementById('pic').src='images/RunnerLeft.png';getElementById('demo').innerHTML='Speed: 1,000 miles/hour';">Runner Left</button>
+        <!-- button onclick="document.getElementById('pic').src='images/RunnerStop.png';getElementById('demo').innerHTML=Date();">Runner Stop</button -->
+        <button onclick="document.getElementById('pic').src='images/RunnerStop.png';getElementById('demo').innerHTML='Speed: 0 miles/hour';">Runner Stop</button>
+        <button id="myBtn" onclick="document.getElementById('myBtn').addEventListener('click', loadEarth(20));">Speed Up Planet</button>
+        <button onclick="getElementById('demo').innerHTML=Date()">What is the time?</button>
+
+
+  </body>
+</html>

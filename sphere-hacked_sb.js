@@ -69,8 +69,7 @@
 
 
   // Variables to hold rotations about the 3 axis
- // var RX = 0,RY,RZ;
-   var RX = 0,RY,RZ;
+  var RX = 0,RY,RZ;
   
   // Temp variables to hold them whilst rendering so they won't get updated.
   var rx,ry,rz;

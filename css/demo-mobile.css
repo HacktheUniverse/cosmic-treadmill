@@ -1,15 +1,16 @@
 body {
-    background: black;
+    background: #000;
     margin: 0;
     padding: 0;
-    color: #DDD;
+    color: #fff;
     text-align: center;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding-bottom: 20px;
 }
 
 h1 {
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 50px;
     margin-bottom: 10px;
 }
 
@@ -46,10 +47,13 @@ a {
 }
 
 #container {
-    position: relative;
-    display: inline-block;
-    width: 200px;
-    height: 200px;
+	position: relative;
+	display: inline-block;
+	width: 600px;
+	height: 600px;
+	background-image: url(../images/Background.png);
+	background-attachment: scroll;
+	background-position: 0% 0%;
 }
 
 #sphere, #flights, #glow-shadows, #locations, #drag {
@@ -58,6 +62,8 @@ a {
     left: 0px;
     width: 100%;
     height: 100%;
+	z-index:0;
+	/*background-image:url(../images/Background.png)*/
 }
 
 #glow-shadows {
@@ -66,7 +72,7 @@ a {
 }
 
 #glow-shadows.earth {
-    background: url(../images/earth-glow-shadows.png);
+   /* background: url(../images/earth-glow-shadows.png);*/
     background-size: 100% 100%;
 }
 
@@ -85,6 +91,7 @@ a {
     margin-top: -5px;
     border-radius: 50%;
     cursor: pointer;
+
 }
 
 .location:hover {
@@ -144,4 +151,60 @@ a {
 
 .social.google {
     vertical-align: -7px;
+}
+
+/*Cosmic Treadmill Assets*/
+#Legs{
+	display:block;
+	width:300px;
+	margin-top:75%;
+	margin-left:25%;
+	position:absolute;
+	z-index:20;
+	
+}
+#LeftLeg{
+	background:url(../images/LeftFoot.png);
+	display:block;
+	width:92px;
+	height:92px;
+	float:left;
+	
+
+	
+	
+}
+#RightLeg{
+	background:url(../images/RightFoot.png);
+	display:block;
+	width:92px;
+	height:92px;
+	float:right;
+	
+}
+
+#Runner{
+	margin-top:35%;
+	margin-left:0%;
+	position:absolute;
+		z-index:20;
+
+	
+}
+#Sun{
+	margin-top:-200px;
+	margin-left:-250px;
+	
+}
+.clickbox {
+    cursor: pointer;
+}
+#mph{
+	display:block;
+	margin-right:50px;
+	margin-top:450px;
+	float:right;
+	font-family:Lato, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:36px;
+	
 }

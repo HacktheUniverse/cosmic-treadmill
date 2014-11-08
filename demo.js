@@ -17,6 +17,19 @@ examples['simple_tilted'] = function() {
   });
 };
 
+/*
+examples['simple_tilted'] = function() {
+  $('#sphere').earth3d({
+    dragElement: $('#locations'), // where do we catch the mouse drag
+    sphere: { // rotation and size of the planet
+      tilt: 40,
+      turn: 20,
+      r: 10
+    }
+  });
+};
+*/
+
 examples['simple_mars'] = function() {
   $('#sphere').earth3d({
     texture: 'images/mars1024x1024.jpg', // texture used by planet
